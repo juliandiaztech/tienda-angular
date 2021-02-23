@@ -44,7 +44,7 @@ export class FormProductComponent implements OnInit {
 
   uploadFile(event) {
     const file = event.target.files[0];
-    const name = 'image.png';
+    const name =  event.target.files[0].name;
     const fileRef = this.storage.ref(name);
     const task = this.storage.upload(name, file);
 
