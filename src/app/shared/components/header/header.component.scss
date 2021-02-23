@@ -1,0 +1,20 @@
+nav > a {
+    padding: 5px;
+    text-decoration: none;
+}
+nav > a.active {
+    background-color: rgb(87, 170, 87);
+}
+.header-row{
+    width: 100%;
+}
+.header-toolbar {
+    margin-bottom: 20px;
+    background-color: #62b99c;
+    color: white;
+  }
+.header-toolbar mat-toolbar-row div a {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
