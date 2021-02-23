@@ -26,11 +26,59 @@
 
     <mat-step>
       <ng-template matStepLabel>Datos personales</ng-template>
-      <h1>contenido</h1>
+      <h1>Checkout</h1>
+
+      <form >
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Datos</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <input placeholder="email" formControlName="email" matInput type="email">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <input placeholder="Nombre"  matInput type="text">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <input placeholder="Apellido"  matInput type="text">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <input placeholder="Ciudad/Localidad"  matInput type="text">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <input placeholder="Observaciones"  matInput type="text">
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+          </mat-card-actions>
+        </mat-card>
+        
+      </form>
     </mat-step>
 
     <mat-step>
       <ng-template matStepLabel>Pago</ng-template>
-      <h1>contenido</h1>
+      <h1>Metodo de pago</h1>
     </mat-step>
   </mat-horizontal-stepper>
